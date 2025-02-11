@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Form Designer</h2>
+        <button id="dark-mode-btn">🌙 Dark Mode</button>
+        <button onclick="saveForm()">💾 Save</button>
+      </div>
+      <div class="sidebar">
+        <h3>Components</h3>
+        <button onclick="addElement('input')">Input +</button>
+        <button onclick="addElement('select')">Select +</button>
+        <button onclick="addElement('textarea')">Textarea +</button>
+        <button onclick="addElement('checkbox')">Checkbox +</button>
+      </div>
+
+      <div class="form-area">
+        <h3>Design Form</h3>
+        <div
+          id="form-preview"
+          class="preview"
+          ondragover="allowDrop(event)"
+          ondrop="dropElement(event)"
+        ></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

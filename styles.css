@@ -1,0 +1,198 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Light Mode */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #181818 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Dark Mode - Sidebar */
+.dark-mode .sidebar {
+  background: #242424;
+  border-right: 1px solid #444;
+}
+
+.dark-mode .sidebar h3 {
+  color: white;
+}
+
+.dark-mode .sidebar button {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .sidebar button:hover {
+  background: #444;
+}
+
+/* Dark Mode - Header */
+.dark-mode .header {
+  background: #202020;
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode button {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode button:hover {
+  background: #444;
+}
+
+/* Dark Mode - Form Area */
+.dark-mode .form-area {
+  background: #222;
+}
+
+.dark-mode .preview {
+  background: #2c2c2c;
+  border: 1px solid #555;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header button {
+  padding: 10px 18px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header button:hover {
+  background: #0056b3;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  background: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+}
+
+.sidebar button:hover {
+  background: #ddd;
+}
+
+/* Form Preview Area */
+.form-area {
+  flex: 1;
+  padding: 100px 40px 40px 40px;
+  background: #f1f1f1;
+}
+
+.preview {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 400px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dark-mode .form-group {
+  background: #333;
+  border: 1px solid #555;
+}
+
+.form-group label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select,
+.dark-mode .form-group textarea {
+  background: #444;
+  color: white;
+  border: 1px solid #777;
+}
+
+.form-group button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-group button:hover {
+  background: darkred;
+}
